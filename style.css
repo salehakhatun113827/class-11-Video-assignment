@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+/** Day-20_Part-1 */
+/* *position- relative */
+.main{}
+.div1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.div2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 221);
+    position: relative;
+    bottom: 145px;
+    left: 58px;
+}
+.div3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(145, 255, 0);
+    position: relative;
+    bottom: 290px;
+    left: 118px;
+}
+/* * position-Absolute */
+.main-div{
+    width: 800px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.main-div .div-1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    display: inline-block;
+}
+.main-div .div-2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 221);
+    display: inline-block;
+    position: absolute;
+    bottom: -12px;
+    right: 310px;
+}
+.main-div .div-3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(145, 255, 0);
+    display: inline-block;
+}
+/** <!-- hover-effect --> */
+.main-section{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: auto;
+}
+.hover-div{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.hover-div img{
+    max-width: 100%;
+}
+.hover-inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: whitesmoke;
+    background-color: rgba(0, 128, 0, 0.705);
+    text-align: center;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.hover-div:hover .hover-inner{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: .7s;
+}
+.hello{
+
+    margin-top: 116px;
+    font-size: 20px;
+}
+/* * position-fixed */
+.div-main h2{
+    margin-top: 13px;
+    margin-left: 25px
+}
+.div-main{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(247, 0, 0);
+    color: whitesmoke;
+    position: fixed;
+    top: 35px;
+    right: 0;
+}
+
+
